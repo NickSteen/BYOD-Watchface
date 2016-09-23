@@ -24,7 +24,7 @@ This is a fully customisable digital (and partially analog) watchface that tries
 This makes for **11.390.625** different configurations (though a lot of these configurations are pretty useless, take a watch with 6 empty fields for example).
 Some examples of different configurations:
 
-![](https://services.garmin.com/appsLibraryBusinessServices_v0/rest/apps/7ca664c7-92a1-47a8-8f04-bbde5746d863/screenshots/7e769ec7-7406-43ed-acd4-22a6ce244bfd) ![](https://services.garmin.com/appsLibraryBusinessServices_v0/rest/apps/7ca664c7-92a1-47a8-8f04-bbde5746d863/screenshots/546a2d33-1217-43e0-9926-2d82b7798166) ![](https://services.garmin.com/appsLibraryBusinessServices_v0/rest/apps/7ca664c7-92a1-47a8-8f04-bbde5746d863/screenshots/dc17616f-11d4-41bc-ab62-9213c5afea26)
+![](https://services.garmin.com/appsLibraryBusinessServices_v0/rest/apps/c3b56d09-2a43-4d3e-b732-dc7e5f149df9/screenshots/795a0140-1e30-4bfd-8a15-9bdcccd0c730) ![](https://services.garmin.com/appsLibraryBusinessServices_v0/rest/apps/c3b56d09-2a43-4d3e-b732-dc7e5f149df9/screenshots/628859bd-d2a5-42af-9fbc-915cb382ae36) ![](https://services.garmin.com/appsLibraryBusinessServices_v0/rest/apps/c3b56d09-2a43-4d3e-b732-dc7e5f149df9/screenshots/64bdf437-bdbf-4cf5-b7d2-1fac0b47175a)
 
 
 ## What is Connect IQ?
@@ -50,7 +50,7 @@ This watchface incorporates quite a lot of different aspects, e.g.
 ### Setting it up
 If you want to use the watchface, go to [The Connect IQ app store](https://apps.garmin.com/en-US/apps/c3b56d09-2a43-4d3e-b732-dc7e5f149df9 "BYOD Watchface on Connect IQ store") to download. It will automatically be set as the new default watchface as soon as your watch has synced with the phone or PC app (this can take a while, so be patient). To set it up, open the settings of the watchface in the app and set the fields to whatever you'd like, play around with it until you've found the watchface of your liking.
 
-Have a request for an additional field, a modification or just some tips on how to improve it? Just go to the [appropriate thread](https://THREADURL "BYOD Watchface on ConnectIQ forum") on the ConnectIQ forum. *Please **do not** use this thread for questions on how to get started or any other general question, use either the [existing thread](https://forums.garmin.com/showthread.php?339891-New-Developer-FAQ "New Developer FAQ"), or [make one yourself](https://forums.garmin.com/forumdisplay.php?479-Connect-IQ "ConnectIQ forum") instead.*
+Have a request for an additional field, a modification or just some tips on how to improve it? Just go to the [appropriate thread](https://THREADURL "BYOD Watchface on ConnectIQ forum") on the ConnectIQ forum. Please **do not** use this thread for questions on how to get started or any other general question, use either the [existing thread](https://forums.garmin.com/showthread.php?339891-New-Developer-FAQ "New Developer FAQ"), or [make one yourself](https://forums.garmin.com/forumdisplay.php?479-Connect-IQ "ConnectIQ forum") instead.
 
 
 ### Source code 
