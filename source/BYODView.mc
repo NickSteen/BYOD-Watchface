@@ -46,12 +46,12 @@ class BYODView extends Ui.WatchFace {
     
     function onSettingsChanged()
     {
-    	settings.setField(0, settings.getNumberProperty("PROP_FIELD_0", settings.FIELD_ANA_LARGE));
-        settings.setField(1, settings.getNumberProperty("PROP_FIELD_1", settings.FIELD_EMPTY));
-        settings.setField(2, settings.getNumberProperty("PROP_FIELD_2", settings.FIELD_DATE_DEV_INFO));
-        settings.setField(3, settings.getNumberProperty("PROP_FIELD_3", settings.FIELD_EMPTY));
-        settings.setField(4, settings.getNumberProperty("PROP_FIELD_4", settings.FIELD_EMPTY));
-        settings.setField(5, settings.getNumberProperty("PROP_FIELD_5", settings.FIELD_BATT));
+    	settings.setField(0, settings.getNumberProperty("PROP_FIELD_0", settings.FIELD_SUN));
+        settings.setField(1, settings.getNumberProperty("PROP_FIELD_1", settings.FIELD_DATE_DEV_INFO));
+        settings.setField(2, settings.getNumberProperty("PROP_FIELD_2", settings.FIELD_HOUR));
+        settings.setField(3, settings.getNumberProperty("PROP_FIELD_3", settings.FIELD_BATT));
+        settings.setField(4, settings.getNumberProperty("PROP_FIELD_4", settings.FIELD_STEPS));
+        settings.setField(5, settings.getNumberProperty("PROP_FIELD_5", settings.FIELD_MIN));
         
         if(DEBUG) {
         	Sys.println("FIELDS SET");
