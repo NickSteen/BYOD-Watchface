@@ -1,0 +1,4 @@
+<fonts>
+<font id="id_NumberThaiXtremeHot" filename="NUMBER_THAI_XTREME_HOT.fnt" filter="0123456789:." antialias="true" />
+<font id="id_symbols" filename="Symbols.fnt" filter="ABCDEFGHIJKLMNabcdefghijklmnopqrstuvwxyz{|}" antialias="true" />
+</fonts>

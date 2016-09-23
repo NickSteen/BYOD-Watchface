@@ -1,0 +1,53 @@
+<strings>
+
+    <string id="AppName">BYOD</string>
+
+    <string id="BackgroundColorTitle">Background Color</string>
+    <string id="ForegroundColorTitle">Foreground Color</string>
+    <string id="IntermediateColorTitle">Intermediate Color</string>
+    <string id="MilitaryFormatTitle">Military Format for 24 Hour Time</string>
+
+    <string id="ColorBlack">Black</string>
+    <string id="ColorDarkGray">Dark Gray</string>
+    <string id="ColorLightGray">Light Gray</string>
+    <string id="ColorWhite">White</string>
+    <string id="ColorBlue">Blue</string>
+    <string id="ColorDarkBlue">Blue</string>
+    <string id="ColorRed">Red</string>
+    <string id="ColorDarkRed">Dark Red</string>
+    <string id="ColorOrange">Orange</string>
+    <string id="ColorYellow">Yellow</string>
+    <string id="ColorGreen">Green</string>
+    <string id="ColorDarkGreen">Dark Green</string>
+    <string id="ColorPink">Pink</string>
+    <string id="ColorPurple">Purple</string>
+
+    <string id="Field0">Field 1:</string>
+    <string id="Field1">Field 2:</string>
+    <string id="Field2">Field 3:</string>
+    <string id="Field3">Field 4:</string>
+    <string id="Field4">Field 5:</string>
+    <string id="Field5">Field 6:</string>
+    <string id="Prompt">Field Prompt</string>
+    <string id="Error">Field Error</string>
+    <string id="IconsColor">Icons in color?</string>
+    <string id="ForeColor">Foregrond colors:</string>
+    <string id="BackColor">Background colors:</string>
+
+    <string id="Empty">Empty</string>
+    <string id="Hour">Hour</string>
+    <string id="Minute">Minute</string>
+    <string id="AnalogClock">Analog Clock</string>
+    <string id="Steps">Steps</string>
+    <string id="StepsInfo">Steps Info</string>
+    <string id="DeviceInfo">Device Info</string>
+    <string id="Date">Date</string>
+    <string id="DateDeviceInfo">Date and Device Info</string>
+    <string id="LargeHour">Large Hour</string>
+    <string id="SunriseSunsetTimes">Sunrise and Sunset Times</string>
+    <string id="LargeAnalogClock">Large Analog Clock</string>
+    <string id="LargeAnalogInfoClock">Large Analog Clock With Info</string>
+    <string id="LargeMinute">Large Minute</string>
+    <string id="Batterygauge">Batterygauge</string>
+
+</strings>

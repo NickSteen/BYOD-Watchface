@@ -1,0 +1,30 @@
+BYOD - Build Your Own Digital Watchface
+
+Open source! Check out the source and how-to on http://github.com/NickSteen/BYOD-Watchface
+I created this watchface because examples are scarce and it can be hard to figure out how to configure the different aspects of creating an app, widget, datafield or watchface yourself.
+Interested in contributing? Check http://github.com/NickSteen/BYOD-Watchface
+If you use this watch, or would like to see it developed further, consider donating to keep the project alive: http://www.paypal.me/NickSteen/1
+
+Configurable with up to 11.390.625 different possibilities, this watch tries to be fully adaptable to the user's needs. By using different settings, the user can let it display exactly what he wants, with 13(+1) different fields to choose from:
+* Digital Hour
+* Digital Minute
+* Large Digital Hour (spanning 4 fields instead of 1)
+* Large Digital Minute (also spanning 4 fields)
+* Analog Clock
+* Large Analog Clock (spanning 4 fields)
+* Large Analog Clock with additional info (Steps, goal, battery%, spanning 4 fields)
+* Steps-Move Graph
+* Additional step info
+* Date
+* Device Info
+* Date-Device info
+* Battery Gauge
+* Sunrise-Sunset Times
+* Empty (this is the +1, obviously)
+
+The display is split into 6 fields, depending on the display type. Each field can then be assigned a type to display, through the mobile app settings.
+
+
+Changelog
+
+1.0 Initial store release

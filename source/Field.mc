@@ -1,0 +1,4 @@
+class Field
+{
+    var settings;
+}
