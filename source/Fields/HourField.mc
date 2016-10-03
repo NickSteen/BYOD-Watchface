@@ -22,7 +22,7 @@ class HourField extends Field
     function draw(loc)
     {
         var hour = Sys.getClockTime().hour;
-        if(!Sys.getDeviceSettings().is24Hour)
+        if(!Sys.getDeviceSettings().is24Hour && hour >= 12)
         {
         	hour = hour%12;
         }
