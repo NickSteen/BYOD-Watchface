@@ -54,7 +54,7 @@ class Settings
     	iconsColored = getBooleanProperty("IconsColored", true);
     	displayOrientation = 1;
     	isAwake = false;
-    	fieldLayout = [0, 0, 0, 0, 0, 0];
+    	fieldLayout = [FIELD_HOUR_LARGE, FIELD_EMPTY, FIELD_DATE_DEV_INFO, FIELD_EMPTY, FIELD_EMPTY, FIELD_MIN];
     }
     
     function calculateFieldXY() {

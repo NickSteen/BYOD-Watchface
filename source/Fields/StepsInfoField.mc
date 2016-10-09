@@ -23,7 +23,7 @@ class StepsInfoField extends Field
         var paddingX = (settings.fieldWidth-50)/2;
         var paddingY = 0;
         var actInfo = Act.getInfo();
-        var distWalked = (actInfo.distance/100000.0).format("%.2f");
+        var distWalked = (actInfo.distance/100000.0).format("%.2f") + Sys.getDeviceSettings().distanceUnits == Sys.UNIT_METRIC ? "km" : "mi";
 		Sys.println("DRAW TEXT");
         // Draw text
         settings.dc.setColor(settings.foreColor, Gfx.COLOR_TRANSPARENT);

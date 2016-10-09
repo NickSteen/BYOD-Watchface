@@ -27,6 +27,7 @@ class BYODView extends Ui.WatchFace {
         settings.dc = dc;
         symbols = Ui.loadResource(Rez.Fonts.id_symbols);
         NumberThaiXtremeHot = Ui.loadResource(Rez.Fonts.id_NumberThaiXtremeHot);
+        getLocation();
         onSettingsChanged();
     }
     
@@ -46,11 +47,11 @@ class BYODView extends Ui.WatchFace {
     
     function onSettingsChanged()
     {
-    	settings.setField(0, settings.getNumberProperty("PROP_FIELD_0", settings.FIELD_SUN));
-        settings.setField(1, settings.getNumberProperty("PROP_FIELD_1", settings.FIELD_DATE_DEV_INFO));
-        settings.setField(2, settings.getNumberProperty("PROP_FIELD_2", settings.FIELD_HOUR));
-        settings.setField(3, settings.getNumberProperty("PROP_FIELD_3", settings.FIELD_BATT));
-        settings.setField(4, settings.getNumberProperty("PROP_FIELD_4", settings.FIELD_STEPS));
+    	settings.setField(0, settings.getNumberProperty("PROP_FIELD_0", settings.FIELD_HOUR_LARGE));
+        settings.setField(1, settings.getNumberProperty("PROP_FIELD_1", settings.FIELD_EMPTY));
+        settings.setField(2, settings.getNumberProperty("PROP_FIELD_2", settings.FIELD_DATE_DEV_INFO));
+        settings.setField(3, settings.getNumberProperty("PROP_FIELD_3", settings.FIELD_EMPTY));
+        settings.setField(4, settings.getNumberProperty("PROP_FIELD_4", settings.FIELD_EMPTY));
         settings.setField(5, settings.getNumberProperty("PROP_FIELD_5", settings.FIELD_MIN));
         
         if(DEBUG) {
@@ -70,12 +71,16 @@ class BYODView extends Ui.WatchFace {
         if(DEBUG) {
         	Sys.println("ICONS COLORED");
         }
+        
+        getLocation();
     }
 
     // Update the view
     function onUpdate(dc) {
         dc.setColor(settings.backColor, settings.foreColor);
         dc.fillRectangle(0, 0, dc.getWidth(), dc.getHeight());
+        
+        getLocation();
         
         onSettingsChanged();
         
@@ -96,18 +101,9 @@ class BYODView extends Ui.WatchFace {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() {
-    	var actInfo = Activity.getActivityInfo();
-        if(actInfo != null)
-        {
-            var deg = actInfo.currentLocation;
-            if(deg != null)
-            {
-                var degArray = deg.toDegrees();
-                settings.location = degArray;
-            }
-        }
-        
-        symbols = Ui.loadResource(Rez.Fonts.id_symbols);
+    	getLocation();
+    	
+    	symbols = Ui.loadResource(Rez.Fonts.id_symbols);
         NumberThaiXtremeHot = Ui.loadResource(Rez.Fonts.id_NumberThaiXtremeHot);
     }
 
@@ -128,5 +124,18 @@ class BYODView extends Ui.WatchFace {
     function onEnterSleep() {
     	settings.isAwake = false;
     	Ui.requestUpdate();
+    }
+    
+    function getLocation() {
+    	var actInfo = Activity.getActivityInfo();
+        if(actInfo != null)
+        {
+            var deg = actInfo.currentLocation;
+            if(deg != null)
+            {
+                var degArray = deg.toDegrees();
+                settings.location = degArray;
+            }
+        }
     }
 }

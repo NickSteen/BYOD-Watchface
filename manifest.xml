@@ -3,7 +3,6 @@
 
         <iq:products>
             <iq:product id="vivoactive"/>
-            <iq:product id="epix"/>
             <iq:product id="vivoactive_hr"/>
         </iq:products>
 

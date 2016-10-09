@@ -1,5 +1,4 @@
 # BYOD-Watchface
----------
 
 ## What is it?
 A watchface for Garmin Connect IQ: [BYOD Watchface](https://apps.garmin.com/en-US/apps/c3b56d09-2a43-4d3e-b732-dc7e5f149df9 "BYOD Watchface on Connect IQ store")
@@ -45,7 +44,6 @@ This watchface incorporates quite a lot of different aspects, e.g.
 * Settings
 
 ## How to use it?
------------
 
 ### Setting it up
 If you want to use the watchface, go to [The Connect IQ app store](https://apps.garmin.com/en-US/apps/c3b56d09-2a43-4d3e-b732-dc7e5f149df9 "BYOD Watchface on Connect IQ store") to download. It will automatically be set as the new default watchface as soon as your watch has synced with the phone or PC app (this can take a while, so be patient). To set it up, open the settings of the watchface in the app and set the fields to whatever you'd like, play around with it until you've found the watchface of your liking.
