@@ -11,6 +11,7 @@
 
         <iq:languages>
             <iq:language>eng</iq:language>
+            <iq:language>dut</iq:language>
         </iq:languages>
 
     </iq:application>
