@@ -3,6 +3,7 @@
     <property id="BackgroundColor" type="number">0x000000</property>
     <property id="ForegroundColor" type="number">0xFFFFFF</property>
     <property id="IntermediateColor" type="number">0xCCCCCC</property>
+    <property id="HourStepsColor" type="number">0x00AAFF</property>
     <property id="IconsColored" type="boolean">true</property>
 
     <property id="PROP_FIELD_0" type="number">0</property>

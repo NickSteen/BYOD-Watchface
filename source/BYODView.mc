@@ -32,8 +32,8 @@ class BYODView extends Ui.WatchFace {
     }
     
     function getDisplayOrientation(dc) {
-    	settings.displayOrientation = dc.getWidth()>dc.getHeight();
-    	if(settings.displayOrientation == 1)
+        settings.displayOrientation = dc.getWidth()>dc.getHeight();
+        if(settings.displayOrientation == 1)
         {
             settings.fieldWidth = dc.getWidth()/3;
             settings.fieldHeight = dc.getHeight()/2;
@@ -47,7 +47,7 @@ class BYODView extends Ui.WatchFace {
     
     function onSettingsChanged()
     {
-    	settings.setField(0, settings.getNumberProperty("PROP_FIELD_0", settings.FIELD_HOUR_LARGE));
+        settings.setField(0, settings.getNumberProperty("PROP_FIELD_0", settings.FIELD_HOUR_LARGE));
         settings.setField(1, settings.getNumberProperty("PROP_FIELD_1", settings.FIELD_EMPTY));
         settings.setField(2, settings.getNumberProperty("PROP_FIELD_2", settings.FIELD_DATE_DEV_INFO));
         settings.setField(3, settings.getNumberProperty("PROP_FIELD_3", settings.FIELD_EMPTY));
@@ -55,21 +55,22 @@ class BYODView extends Ui.WatchFace {
         settings.setField(5, settings.getNumberProperty("PROP_FIELD_5", settings.FIELD_MIN));
         
         if(DEBUG) {
-        	Sys.println("FIELDS SET");
+            Sys.println("FIELDS SET");
         }
         
         settings.foreColor = settings.getNumberProperty("ForegroundColor", Gfx.COLOR_WHITE);
         settings.backColor = settings.getNumberProperty("BackgroundColor", Gfx.COLOR_BLACK);
         settings.intermediateColor = settings.getNumberProperty("IntermediateColor", Gfx.COLOR_DK_GRAY);
+        settings.hourStepsColor = settings.getNumberProperty("HourStepsColor", Gfx.COLOR_BLUE);
         
         if(DEBUG) {
-        	Sys.println(Lang.format("COLORS SET: $1$ - $2$", [settings.foreColor, settings.backColor]));
+            Sys.println(Lang.format("COLORS SET: $1$ - $2$", [settings.foreColor, settings.backColor]));
         }
         
         settings.iconsColored = settings.getBooleanProperty("PROP_ICONS_COLOR", true);
         
         if(DEBUG) {
-        	Sys.println("ICONS COLORED");
+            Sys.println("ICONS COLORED");
         }
         
         getLocation();
@@ -92,8 +93,8 @@ class BYODView extends Ui.WatchFace {
         }
         
         if(DEBUG) {
-        	counter = counter+1;
-        	Sys.println(Lang.format("$1$ FIELDS DRAWN", [counter]));
+            counter = counter+1;
+            Sys.println(Lang.format("$1$ FIELDS DRAWN", [counter]));
         }
     }
     
@@ -101,9 +102,9 @@ class BYODView extends Ui.WatchFace {
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
     function onShow() {
-    	getLocation();
-    	
-    	symbols = Ui.loadResource(Rez.Fonts.id_symbols);
+        getLocation();
+        
+        symbols = Ui.loadResource(Rez.Fonts.id_symbols);
         NumberThaiXtremeHot = Ui.loadResource(Rez.Fonts.id_NumberThaiXtremeHot);
     }
 
@@ -111,23 +112,23 @@ class BYODView extends Ui.WatchFace {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
-    	symbols = null;
+        symbols = null;
         NumberThaiXtremeHot = null;
     }
 
     // The user has just looked at their watch. Timers and animations may be started here.
     function onExitSleep() {
-    	settings.isAwake = true;
+        settings.isAwake = true;
     }
 
     // Terminate any active timers and prepare for slow updates.
     function onEnterSleep() {
-    	settings.isAwake = false;
-    	Ui.requestUpdate();
+        settings.isAwake = false;
+        Ui.requestUpdate();
     }
     
     function getLocation() {
-    	var actInfo = Activity.getActivityInfo();
+        var actInfo = Activity.getActivityInfo();
         if(actInfo != null)
         {
             var deg = actInfo.currentLocation;
