@@ -39,7 +39,9 @@ class Settings
     var backColor;      // Color - 0x000000
     var intermediateColor;      // Color - 0xCCCCCC
     var hourStepsColor; // Color - 0x00AAFF
+    var hourStepsColorFull; // Color - 0x00FF00
     var iconsColored;   // Boolean - TRUE
+    var stepsAfterFull;   // Boolean - TRUE
     var displayOrientation; // Number - 1 (0=undefined, 1=landscape, 2=portrait)
     var fieldWidth;     // Number - 68
     var fieldHeight;    // Number - 74
@@ -54,10 +56,12 @@ class Settings
         backColor = getNumberProperty("BackgroundColor", 0x000000);
         intermediateColor = getNumberProperty("IntermediateColor", 0xFFFFFF);
         hourStepsColor = getNumberProperty("HourStepsColor", 0x00AAFF);
+        hourStepsColorFull = getNumberProperty("HourStepsColorFull", 0x00FF00);
         iconsColored = getBooleanProperty("IconsColored", true);
-        displayOrientation = 1;
+        stepsAfterFull = getBooleanProperty("HourStepsColorFullBool", true);
+        displayOrientation = 2;
         isAwake = false;
-        fieldLayout = [FIELD_HOUR_LARGE, FIELD_EMPTY, FIELD_DATE_DEV_INFO, FIELD_EMPTY, FIELD_EMPTY, FIELD_MIN];
+        fieldLayout = [FIELD_HOUR_LARGE_STEPS, FIELD_EMPTY, FIELD_DATE, FIELD_EMPTY, FIELD_EMPTY, FIELD_MIN];
     }
     
     function calculateFieldXY() {

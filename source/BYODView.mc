@@ -17,7 +17,7 @@ class BYODView extends Ui.WatchFace {
         WatchFace.initialize();
         settings = new Settings();
         counter = 0;
-        DEBUG = true;
+        DEBUG = false;
     }
 
     // Load your resources here
@@ -47,9 +47,9 @@ class BYODView extends Ui.WatchFace {
     
     function onSettingsChanged()
     {
-        settings.setField(0, settings.getNumberProperty("PROP_FIELD_0", settings.FIELD_HOUR_LARGE));
+        settings.setField(0, settings.getNumberProperty("PROP_FIELD_0", settings.FIELD_HOUR_LARGE_STEPS));
         settings.setField(1, settings.getNumberProperty("PROP_FIELD_1", settings.FIELD_EMPTY));
-        settings.setField(2, settings.getNumberProperty("PROP_FIELD_2", settings.FIELD_DATE_DEV_INFO));
+        settings.setField(2, settings.getNumberProperty("PROP_FIELD_2", settings.FIELD_DATE));
         settings.setField(3, settings.getNumberProperty("PROP_FIELD_3", settings.FIELD_EMPTY));
         settings.setField(4, settings.getNumberProperty("PROP_FIELD_4", settings.FIELD_EMPTY));
         settings.setField(5, settings.getNumberProperty("PROP_FIELD_5", settings.FIELD_MIN));
@@ -62,6 +62,7 @@ class BYODView extends Ui.WatchFace {
         settings.backColor = settings.getNumberProperty("BackgroundColor", Gfx.COLOR_BLACK);
         settings.intermediateColor = settings.getNumberProperty("IntermediateColor", Gfx.COLOR_DK_GRAY);
         settings.hourStepsColor = settings.getNumberProperty("HourStepsColor", Gfx.COLOR_BLUE);
+        settings.hourStepsColorFull = settings.getNumberProperty("HourStepsColorFull", Gfx.COLOR_GREEN);
         
         if(DEBUG) {
             Sys.println(Lang.format("COLORS SET: $1$ - $2$", [settings.foreColor, settings.backColor]));

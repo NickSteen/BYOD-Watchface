@@ -4,14 +4,16 @@
     <property id="ForegroundColor" type="number">0xFFFFFF</property>
     <property id="IntermediateColor" type="number">0xCCCCCC</property>
     <property id="HourStepsColor" type="number">0x00AAFF</property>
+    <property id="HourStepsColorFull" type="number">0x00FF00</property>
     <property id="IconsColored" type="boolean">true</property>
+    <property id="HourStepsColorFullBool" type="boolean">true</property>
 
-    <property id="PROP_FIELD_0" type="number">0</property>
-    <property id="PROP_FIELD_1" type="number">7</property>
-    <property id="PROP_FIELD_2" type="number">9</property>
-    <property id="PROP_FIELD_3" type="number">1</property>
-    <property id="PROP_FIELD_4" type="number">4</property>
-    <property id="PROP_FIELD_5" type="number">12</property>
+    <property id="PROP_FIELD_0" type="number">15</property>
+    <property id="PROP_FIELD_1" type="number">0</property>
+    <property id="PROP_FIELD_2" type="number">12</property>
+    <property id="PROP_FIELD_3" type="number">0</property>
+    <property id="PROP_FIELD_4" type="number">0</property>
+    <property id="PROP_FIELD_5" type="number">2</property>
 
     <property id="PROP_ICONS_COLOR" type="boolean">12</property>
     

@@ -6,6 +6,7 @@
     <string id="ForegroundColorTitle">Foreground Color</string>
     <string id="IntermediateColorTitle">Intermediate Color</string>
     <string id="HourStepsColorTitle">Hour completed steps Color</string>
+    <string id="HourStepsColorFullTitle">Hour completed steps Color after hitting 100%</string>
     <string id="MilitaryFormatTitle">Military Format for 24 Hour Time</string>
 
     <string id="ColorBlack">Black</string>
@@ -32,6 +33,7 @@
     <string id="Prompt">Field Prompt</string>
     <string id="Error">Field Error</string>
     <string id="IconsColor">Icons in color?</string>
+    <string id="HourStepsColorFullBool">Use other color-fill after 100% steps in hour-steps?</string>
     <string id="ForeColor">Foregrond colors:</string>
     <string id="BackColor">Background colors:</string>
 
