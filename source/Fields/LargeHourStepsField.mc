@@ -65,7 +65,6 @@ class LargeHourStepsField extends Field
         settings.dc.fillRectangle(settings.fieldXY[loc][0]+paddingX, effectY, 2*settings.fieldWidth-spaceWidth, effectHeight);
         
         settings.dc.setColor(Gfx.COLOR_TRANSPARENT, Gfx.COLOR_BLACK);
-        var hourString = hour.format("%02.f");
-        settings.dc.drawText(settings.fieldXY[loc][0]+paddingX, settings.fieldXY[loc][1]+paddingY, NumberThaiXtremeHot, hourString, Gfx.TEXT_JUSTIFY_LEFT);        
+        settings.dc.drawText(settings.fieldXY[loc][0]+paddingX, settings.fieldXY[loc][1]+paddingY, NumberThaiXtremeHot, hour.format("%02.f"), Gfx.TEXT_JUSTIFY_LEFT);        
     }
 }
