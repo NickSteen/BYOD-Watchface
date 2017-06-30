@@ -2,7 +2,7 @@
 
     <property id="BackgroundColor" type="number">0x000000</property>
     <property id="ForegroundColor" type="number">0xFFFFFF</property>
-    <property id="IntermediateColor" type="number">0xCCCCCC</property>
+    <property id="IntermediateColor" type="number">0xFF5500</property>
     <property id="HourStepsColor" type="number">0x00AAFF</property>
     <property id="HourStepsColorFull" type="number">0x00FF00</property>
     <property id="IconsColored" type="boolean">true</property>
@@ -15,6 +15,6 @@
     <property id="PROP_FIELD_4" type="number">0</property>
     <property id="PROP_FIELD_5" type="number">2</property>
 
-    <property id="PROP_ICONS_COLOR" type="boolean">12</property>
+    <property id="PROP_ICONS_COLOR" type="boolean">true</property>
     
 </properties>

@@ -60,7 +60,7 @@ class BYODView extends Ui.WatchFace {
         
         settings.foreColor = settings.getNumberProperty("ForegroundColor", Gfx.COLOR_WHITE);
         settings.backColor = settings.getNumberProperty("BackgroundColor", Gfx.COLOR_BLACK);
-        settings.intermediateColor = settings.getNumberProperty("IntermediateColor", Gfx.COLOR_DK_GRAY);
+        settings.intermediateColor = settings.getNumberProperty("IntermediateColor", Gfx.COLOR_ORANGE);
         settings.hourStepsColor = settings.getNumberProperty("HourStepsColor", Gfx.COLOR_BLUE);
         settings.hourStepsColorFull = settings.getNumberProperty("HourStepsColorFull", Gfx.COLOR_GREEN);
         
@@ -69,6 +69,7 @@ class BYODView extends Ui.WatchFace {
         }
         
         settings.iconsColored = settings.getBooleanProperty("PROP_ICONS_COLOR", true);
+        settings.stepsAfterFull = settings.getBooleanProperty("HourStepsColorFullBool", true);
         
         if(DEBUG) {
             Sys.println("ICONS COLORED");

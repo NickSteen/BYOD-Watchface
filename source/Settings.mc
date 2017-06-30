@@ -37,7 +37,7 @@ class Settings
     var location;       // [lat, long] - [50.848738, 4.732230]
     var foreColor;      // Color - 0xFFFFFF
     var backColor;      // Color - 0x000000
-    var intermediateColor;      // Color - 0xCCCCCC
+    var intermediateColor;      // Color - 0xFF5500
     var hourStepsColor; // Color - 0x00AAFF
     var hourStepsColorFull; // Color - 0x00FF00
     var iconsColored;   // Boolean - TRUE
@@ -54,7 +54,7 @@ class Settings
         location = [getFloatProperty("LocationLatitude", 50.848738), getNumberProperty("LocationLongitude", 4.732230)];
         foreColor = getNumberProperty("ForegroundColor", 0xFFFFFF);
         backColor = getNumberProperty("BackgroundColor", 0x000000);
-        intermediateColor = getNumberProperty("IntermediateColor", 0xFFFFFF);
+        intermediateColor = getNumberProperty("IntermediateColor", 0xFF5500);
         hourStepsColor = getNumberProperty("HourStepsColor", 0x00AAFF);
         hourStepsColorFull = getNumberProperty("HourStepsColorFull", 0x00FF00);
         iconsColored = getBooleanProperty("IconsColored", true);

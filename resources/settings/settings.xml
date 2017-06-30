@@ -100,7 +100,7 @@
     </setting>
 
     <setting propertyKey="@Properties.PROP_ICONS_COLOR" title="@Strings.IconsColor" prompt="@Strings.Prompt">
-            <settingConfig type="boolean" errorMessage="@Strings.Error" />
+            <settingConfig type="boolean" />
     </setting>
         
     <setting propertyKey="@Properties.PROP_FIELD_0" title="@Strings.Field0" prompt="@Strings.Prompt">
